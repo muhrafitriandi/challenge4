@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Challenge 4</title>
+<style>
+body {
+	background: #566573;
+}
+.contact-form {
+	max-width: 350px;
+	margin:auto;
+	border-radius: 5px;
+	background: #CCCCFF;
+	padding: 20px;
+}
+input[type=text], input[type=email], select, textarea {
+	width: 100%;
+	padding:12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+input[type=submit] {
+	width: 100%;
+	background: #27AE60;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+}
+</style>
+</head>
+<body>
+	<div class="contact-form">
+		<form>
+			<h2 style="color:white;"><center>SEND ME SOMETHING!</h2></center>
+			<label for="name">Name</label>
+			<input type="text" name="fullname" placeholder="Enter your name">
+			<label for="email">Email</label>
+			<input type="email" name="email" placeholder="Enter your email">
+			<label for="country">Country</label>
+			<select id="country">
+				<option value="country">Select Country</option>
+				<option value="indonesia">Indonesia</option>
+				<option value="thailand">Thailand</option>
+				<option value="malaysia">Malaysia</option>
+				<option value="japan">Japan</option>
+				<option value="china">China</option>
+			</select>
+			<label for="text">Message</label>
+			<textarea placeholder="Type your message here..."></textarea>
+			<input type="radio" id="male" name="gender" value="male">
+			<label for="male">Male</label>
+			<input type="radio" id="female" name="gender" value="female">
+			<label for="female">Female</label>
+			<input type="submit" value="SEND">
+		</form>
+</body>
+</html>
